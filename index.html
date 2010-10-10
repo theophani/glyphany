@@ -1,0 +1,85 @@
+<!doctype html> 
+<html lang="en-US"> 
+<head> 
+<meta charset="utf-8"> 
+<title>glyphany — glyph palette</title> 
+<meta name="viewport" content="width=320; initial-scale=1.0;">
+<style> 
+body {
+  background-color: #0080C0; margin: 0; color: #FFF; line-height: 1.5em; 
+  font-family: Georgia,serif; font-size: 100%; text-shadow: #004060 1px 1px 1px;
+  width: 320px; padding: 20px; margin: 50px auto;
+}
+p { margin: 0 0 0.75em 0; }
+p.footnote { font-size: 80%; line-height: 1.875em; margin-top: 1.875em; opacity: 0.5;  }
+p.footnote:hover { opacity: 1.0; }
+p.footnote span { font-size: 125%; }
+em { font-style: normal; font-size: 125%; line-height: 0.909em }
+h1 {
+  font-size: 160%; text-shadow: #004060 2px 2px 1px;
+  font-family: 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+  font-weight:normal; line-height: 1.25em; margin: 0 0 0.625em 0;
+}
+h1 {
+  font-size: 240%; line-height: 1.5833; margin: 0 0 0.3125em 0;
+}
+a { text-decoration: none; color: #fff; border-bottom: solid 1px #00A0F0; }
+a:hover { border-bottom-color: #004060; }
+@media screen and (max-device-width: 480px) {
+  body { font-size: 200%; } .desktop-only { display:none; }
+}
+a.bookmarklet {
+  cursor:move;
+  border: none; background-color: #fff; color: #004060; text-shadow: none;
+  display: inline-block; padding: 0.5em 1em; line-height: 1em; margin: 0.5em 0;
+  -webkit-border-radius: 1em;
+  -moz-border-radius:    1em;
+  border-radius:         1em;
+}
+</style>
+</head> 
+<body> 
+ 
+  <h1>glyphany!</h1>
+  <p>
+    <em>glyphany</em> provides a glyph palette on any webpage.
+    Now all your favourite glyphs are only a couple clicks away.
+  </p>
+  <p>
+    Preview <em>glyphany</em> by
+    <a href="javascript:(function(){if(window.showGlyphany){window.showGlyphany();}else{var elem=document.createElement('script');document.title='(Fetching glyphany ... ) '+document.title;elem.setAttribute('src','http://tif.ca/glyphany/glyphany.js?t='+(new Date().getTime()));document.body.appendChild(elem);}})()"
+       title="Click to preview glyphany">clicking here</a>.
+  </p>
+  <p>
+    To install <em>glyphany</em><br>
+    to use at any time on any tab<br>
+    drag this button to your Bookmarks Bar:
+  </p>
+  <p>
+    <a href="javascript:(function(){if(window.showGlyphany){window.showGlyphany();}else{var elem=document.createElement('script');document.title='(Fetching glyphany ... ) '+document.title;elem.setAttribute('src','http://tif.ca/glyphany/glyphany.js?t='+(new Date().getTime()));document.body.appendChild(elem);}})()"
+       class="bookmarklet"
+       onclick="alert('Drag the button to your Bookmarks Bar');return false;"
+       title="Drag this link to your Bookmarks Bar">pick a glyph</a>
+  </p>
+  
+  <p class="footnote">
+    <span>→</span> <a href="/">tiffany</a> made this
+  </p>
+
+<!--
+bookmarklet looks like:
+(function(){
+  if (window.showGlyphany) {
+    window.showGlyphany();
+  } else {
+    var elem=document.createElement('script');
+    document.title='(Fetching glyphany ... ) '+document.title;
+    elem.setAttribute('src','http://tif.ca/glyphany/glyphany.js?t='+(new Date().getTime()));
+    document.body.appendChild(elem); 
+  }
+})()  
+-->
+<script src="jquery-1.4.2.min.js"></script>
+</body>
+</html> 
+
